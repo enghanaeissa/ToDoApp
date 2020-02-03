@@ -1,0 +1,109 @@
+ /*body styling*/
+body
+{
+    background: white;
+    margin: 0;
+    min-width: 300px;
+    color:white;
+    
+}
+
+/*header styling*/
+.the-header{
+    background:#113;
+    text-align: center;
+    padding: 20px 32px;
+}
+.the-header:after{
+    content:"";
+    display:table;
+    clear: both;
+}
+*
+{
+    box-sizing: border-box;
+}
+
+.the-input
+{
+    width:900px;
+    height:40px;
+    float: left;
+    font-size:15px;
+    margin: 0;
+    border: none;
+}
+
+/*Button styling*/
+.create-button{
+    width:20%;
+    color: silver;
+    padding:11px;
+    background: #349;
+    text-align: center;
+    float:left;
+    cursor:pointer;
+    border-radius: 0;
+    margin-left:10px;
+}
+.create-button:hover
+{
+ background: gray;   
+}
+
+/* list styling */
+ul
+{
+ margin: 0;
+ padding:0;
+}
+ul li
+{
+ list-style-type: none;
+ position:relative;
+ background:silver;
+ cursor:pointer;
+ padding: 10px 6px 10px 20px;
+ transition:0.3s;
+ color: black;
+}
+
+
+ul li:nth-child(odd)
+{
+    background-color:#999;
+}
+ul li:hover{
+    background:#444;
+    
+}
+ul li.checked
+{
+ background:#333;
+ color:white;
+ text-decoration: line-through;
+}
+ul li.checked::before
+{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-color: white;
+    border-width: 0 2px 2px 0;
+    top:10px;
+    left:15px;
+    transform: rotate(45deg);
+    height: 15px;
+    width:10px;  
+}
+.close
+{
+    position: absolute;
+    top:0;
+    right:0;
+    padding:10px 15px 10px 15px;
+}
+.close:hover
+{
+  background: #777;  
+}
